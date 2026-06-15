@@ -20,6 +20,26 @@ The experiments include three forecast lead times:
 - t+6
 - t+12
 
+# Data Description
+
+This study uses ERA5 hourly reanalysis data from the Copernicus Climate Data Store.
+
+The source domain is the United Kingdom and the target domain is Ireland. The dataset covers the period from 2020 to 2021.
+
+The input variables include:
+
+- u10: 10 m u-component of wind
+- v10: 10 m v-component of wind
+- t2m: 2 m temperature
+- d2m: 2 m dewpoint temperature
+- sp: surface pressure
+- tcc: total cloud cover
+- tp: total precipitation
+
+The prediction target is total precipitation at lead times t+1, t+6, and t+12.
+
+The raw ERA5 data are not included in this repository due to data size and redistribution considerations. Users can download ERA5 data from the Copernicus Climate Data Store and apply the preprocessing scripts provided in this repository.  
+
 ## Main Models
 
 The repository includes implementations of:
